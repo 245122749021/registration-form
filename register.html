@@ -1,74 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        label {
-            font-weight: bold;
-        }
-        input, select {
-            width: 100%;
-            padding: 8px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            background: #28a745;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            width: 100%;
-            border-radius: 5px;
-        }
-        button:hover {
-            background: #218838;
-        }
-    </style>
+    <title>DEVOPS LAB</title>
 </head>
 <body>
-    <div class="container">
-        <h2>Registration Form</h2>
-        <form action="#" method="post">
-            <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" name="fullname" required>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-            
-            <label for="gender">Gender</label>
-            <select id="gender" name="gender">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-            </select>
-            
-            <label for="dob">Date of Birth</label>
-            <input type="date" id="dob" name="dob" required>
-            
-            <button type="submit">Register</button>
-        </form>
-    </div>
+    <h2 align="center">Student Registration Form</h2>
+    <form>
+        <table align="center" border="1" cellspacing="5" cellpadding="10">
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="contact">Contact Number:</label></td>
+                <td><input type="text" id="contact" name="contact" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea id="address" name="address" rows="4" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td>Hobbies:</td>
+                <td>
+                    <input type="checkbox" id="singing" name="hobbies" value="Singing"> <label for="singing">Singing</label>
+                    <input type="checkbox" id="travelling" name="hobbies" value="Travelling"> <label for="travelling">Travelling</label>
+                    <input type="checkbox" id="reading" name="hobbies" value="Reading Novels"> <label for="reading">Reading Novels</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Skill Set:</td>
+                <td>
+                    <input type="checkbox" id="c" name="skills" value="C"> <label for="c">C</label>
+                    <input type="checkbox" id="python" name="skills" value="Python"> <label for="python">Python</label>
+                    <input type="checkbox" id="java" name="skills" value="Java"> <label for="java">Java</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="qualification">Highest Qualification:</label></td>
+                <td>
+                    <select id="qualification" name="qualification">
+                        <option value="High School">High School</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="Bachelor's">Bachelor's</option>
+                        <option value="Master's">Master's</option>
+                        <option value="PhD">PhD</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="district">District:</label></td>
+                <td>
+                    <select id="district" name="district">
+                        <option value="district1">Hyderabad</option>
+                        <option value="district2">Ranga Reddy</option>
+                        <option value="district3">Medchal-Malkajgiri</option>
+                        <option value="district4">Sanga Reddy</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+    <td align="center">
+        <input type="submit" value="Register">
+    </td>
+    <td align="center">
+        <input type="reset" value="Clear">
+    </td>
+</tr>
+
+        </table>
+    </form>
 </body>
 </html>
-
+</html>
